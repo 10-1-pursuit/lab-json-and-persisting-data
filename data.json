@@ -1,0 +1,29 @@
+[
+  {
+    "id": "9623fa84-207f-4d03-b37f-cc9fe1fd8d7f",
+    "productName": "Elegant Frozen Sausages",
+    "price": 919,
+    "category": "Music",
+    "isAvailable": true,
+    "description": "Soluta autem rerum ducimus eos corrupti. Repudiandae similique ipsum voluptas quas impedit laudantium maxime laudantium eum. Vero animi nesciunt aliquid expedita unde vel fuga corporis. Tempore odio eum nulla. Provident quaerat sunt corporis maiores perferendis ipsam harum necessitatibus voluptas. Vitae sapiente quod ab illo voluptas fugiat saepe.",
+    "rating": 4
+  },
+  {
+    "id": "d51195ff-5aa1-4cdd-94a4-6b67ee6f7c0c",
+    "productName": "Ergonomic Metal Chicken",
+    "price": 838,
+    "category": "Jewelery",
+    "isAvailable": false,
+    "description": "Beatae impedit officiis occaecati reiciendis fuga ullam. Ex minima perferendis cupiditate est earum. Culpa omnis natus alias. Quos minus ex.",
+    "rating": 4
+  },
+  {
+    "id": "ceef9801-fe23-415b-a9c1-eb89b9cb648a",
+    "productName": "Recycled Wooden Bike",
+    "price": 867,
+    "category": "Outdoors",
+    "isAvailable": true,
+    "description": "Dolorum aut recusandae id illo amet nesciunt eligendi voluptas nihil. Doloremque numquam veritatis. Culpa explicabo provident deserunt hic. Qui laudantium odit.",
+    "rating": 3
+  }
+]
