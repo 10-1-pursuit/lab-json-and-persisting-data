@@ -8,8 +8,8 @@ const hacker = {
 }`,
 
     messageContent: lorem.paragraph,
-    isResolved: true || false 
+    isResolved: faker.datatype.boolean(),
     messageResponse: hacker.phrase. -date: "the message was posted", 
     numberOfUpvotes: 800165,
 
-}
+};
