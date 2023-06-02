@@ -1,0 +1,22 @@
+
+
+{
+    "crId":"this is the key you run with out quotes to run create id from command",
+   
+    "brand": "faker.company.name()",
+
+    "locatedWithin5Miles": "faker.datatype.boolean()",
+
+    "entranceFee": {
+       "entrancePriceMember": "faker.commerce.price(10, 100, 2, `$`)",
+       "entracePriceNonMember": "faker.commerce.price(100, 200, 2, `$`)"
+
+
+    }
+
+}
+
+
+
+
+
