@@ -13,6 +13,6 @@ const productData= require("../lab-json-and-persisting-data","data.json")
 
 const myObj= require("../lab-json-and-persisting-data/data/data.json")
 
-console.log(Object.values( myObj))
+console.log(( myObj))
 
 
