@@ -1,0 +1,3 @@
+[{"name":"Toyota LeBaron","vin":"HBN4VB827RWZ92092","color":"ivory","fuel":"Electric","type":"SUV","carsSold":"89835","inStock":false,"price":"$97468.00","currency":"USD"},
+{"name":"Maserati Durango","vin":"GA33ZWRBM6AE39255","color":"pink","fuel":"Hybrid","type":"Extended Cab Pickup","carsSold":"81392","inStock":false,"price":"$80854.00","currency":"USD"},
+{"name":"Volvo Civic","vin":"BM0KPTS3K9JG56731","color":"lavender","fuel":"Electric","type":"SUV","carsSold":"23104","inStock":true,"price":"$120068.00","currency":"USD"}]
