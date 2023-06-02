@@ -1,0 +1,16 @@
+
+
+{
+    "createId":"this is the key you run with out quotes to create RANDOM ID from command",
+   
+    "createBrand":"this is the key you run with out quotes to create random BRAND from command",
+
+    "createBoolean":"this is the key you run with out quotes to  create random BOOLEAN from command",
+
+    "createEntranceFee":"this is the key you run with out quotes to run create random entrance fee from command"
+
+}
+
+
+
+
