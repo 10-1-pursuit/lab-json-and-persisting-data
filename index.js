@@ -25,7 +25,7 @@ function nineNineCentItem(){
     expiration,
     inStock
  }
-}
+};
 
 
 
@@ -36,7 +36,7 @@ function nineNineCentItems(place , thing ){
      myArr.push(newTim);
     }
     return myArr;
-}
+};
 
 
 
@@ -50,6 +50,6 @@ writeJsonFile(createProduct)
 module.exports = {
     nineNineCentItem,
     nineNineCentItems,
-}
+};
 
    

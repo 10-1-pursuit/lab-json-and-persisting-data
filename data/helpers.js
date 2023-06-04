@@ -20,7 +20,7 @@ function writeJsonFile(nineNine){
     
     fs.writeFileSync( `products.json`, data , { encoding: "utf-8"} )
 
-}
+};
 
 
 

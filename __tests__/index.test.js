@@ -18,5 +18,5 @@ describe ("nineNineCentItems" , () => {
   const count = 5;
   const item = nineNineCentItems(count);
   expect(item).toHaveLength(count)
-    })
+    });
 });    
