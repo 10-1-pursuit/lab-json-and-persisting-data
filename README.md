@@ -5,12 +5,12 @@ You will build an app that generates a fake data set for a new app with the npm 
 ## Getting Started
 
 1. Fork and clone this repository.
-1. Navigate to the cloned repository's directory on your command line.
-1. Turn this project into a Node.js project by running `npm init -y`.
-1. Create a `.gitignore` and add the appropriate files and folders
-1. Open up the repository in VSCode.
-1. Create an `index.js` file.
-1. Add `faker-js@7` and `jest@29` to dev dependencies.
+2. Navigate to the cloned repository's directory on your command line.
+3. Turn this project into a Node.js project by running `npm init -y`.
+4. Create a `.gitignore` and add the appropriate files and folders
+5. Open up the repository in VSCode.
+6. Create an `index.js` file.
+7. Add `faker-js@7` and `jest@29` to dev dependencies.
 
 ## Instructions
 
