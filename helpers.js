@@ -1,8 +1,5 @@
 const fs = require("node:fs")
 
-
-const fs = require("node:fs")
-
 //console.log("Node's File System: ", fs)
 console.log("The Keys for the Node FS:", Object.keys(fs))
 
@@ -13,7 +10,7 @@ console.log("TheFunction readFileSync ", Object.keys(fs.writeFileSync))
 
 //// readFileSync(" pathToTheFile", "howToReadTheFile")
 const path = "./data"
-const fileName = "products.json"
+const fileName = "hackerBeware.JSON"
 const collection = fs.readFileSync(`${path}/${fileName}`, "utf-8")
 
 //condition ? trueAction: falseAction ~ similar to if/else
@@ -32,7 +29,11 @@ function readJSONFile(path, fileName) {
 ///writeFileSync("path", data, {encoding: "utf-8" } )
 
 function writeJSONFile(path, fileName, data) {
-    data = toStringify()
+    data = JSON.toStringify(data)
     fs.writeFileSync(`${path}/${fileName}`, data, { encoding: "utf-8" })
 }
 
+module.exports = {
+    readJSONFile,
+    writeJSONFile,
+} 

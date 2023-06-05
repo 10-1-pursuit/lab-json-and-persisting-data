@@ -1,20 +1,19 @@
-const { createRandomProduct, randomFakeProduct } = require("./products")
+const { createRandomHacker, randomFakeProduct } = require("./data/hackerBeware.json")
 const { writeJSONFile, readJSONFile } = require("./helpers.js")
 
 //run: function to run our entire Command Line App
 function run() {
 
     console.log("Welcome to our Product App!")
-    let productsData = readJSONFile("./data", "products.json")
+    let productsData = readJSONFile("./data", "hackerBeware.json")
     //if file is empty -> Give us an empty Array
 
-    productsData.push(createRandomProduct())
+    productsData.push(createRandomHacker())
 
-    writeJSONFile("./data", "products.json", productsData)
+    writeJSONFile("./data", "hackerBeware.json", productsData)
 
 }
 
 run()
 
 
-/////// process object + process.argvsmh
