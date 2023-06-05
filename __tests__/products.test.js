@@ -35,5 +35,3 @@ describe('randomProductFactory()', () => {
 		expect(actual).toEqual(expected);
 	});
 });
-
-console.log(productKeys);
