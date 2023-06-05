@@ -10,3 +10,7 @@ function createRandomCustomer(){
     return newCustomer;
 }
 console.log(createRandomCustomer())
+
+module.exports = {
+    createRandomCustomer
+}

@@ -1,4 +1,4 @@
-const {} = require("./customers")
+const { createRandomCustomer } = require("./customers")
 const {
     readJSONFile,
     writeJSONFile,
