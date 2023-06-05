@@ -1,0 +1,20 @@
+[
+    {
+        "id": "f4a665c9-cbc4-4a42-bde2-19666a3ce9f4",
+        "productName": "Practical Metal Computer",
+        "price": 496,
+        "category": "Baby",
+        "isAvailable": false,
+        "description": "Distinctio maxime nulla sint placeat in. Expedita eligendi tempora consequuntur natus illum. Assumenda ipsum expedita consequuntur numquam doloribus quam accusantium quasi. Error non architecto rem exercitationem corporis molestiae distinctio autem quia. Deserunt exercitationem aspernatur omnis qui. Dolore ea ullam consectetur eos placeat sequi assumenda ipsam.",
+        "rating": 4
+    },
+    {
+        "id": "9e56b509-1d66-44d8-ade7-b497bde58333",
+        "productName": "Ergonomic Metal Pizza",
+        "price": 949,
+        "category": "Electronics",
+        "isAvailable": true,
+        "description": "Debitis dignissimos quae quia ipsa consectetur ad nemo. Est debitis excepturi. Dolorem aut expedita quam nihil officia laudantium velit.",
+        "rating": 2
+    }
+]
