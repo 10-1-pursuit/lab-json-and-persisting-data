@@ -44,6 +44,7 @@ describe("Checks if the user object has all the required fields", () => {
     });
 })
 
+// - Make sure the correct datatype is being inserted into each field.
 describe("Checks if the user object keys has all the correct values", () => {
     it("Checks if the id field has the correct datatype", () => {
         const actual = typeof createRandomUser()._id;
@@ -86,4 +87,3 @@ describe("Checks if the user object keys has all the correct values", () => {
         expect(actual).toEqual(expected);
     });
 })
-// - Make sure the correct datatype is being inserted into each field.
