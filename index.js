@@ -16,4 +16,13 @@ function run() {
 
 run()
 
+let filteredHacks = [];
+function filterByResolved(hacker) {
+    for (let key in hacker) {
+        if (key.isResolved === true) {
+            filteredHacks.push(hacker)
+        }
+    }
+    return filteredHacks;
+}
 
