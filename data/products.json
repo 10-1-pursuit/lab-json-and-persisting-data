@@ -1,0 +1,74 @@
+[
+  {
+    "id": "aef30df6-278f-48fd-b0d1-8127327d3e60",
+    "productGenre": "Metal",
+    "artist": "Erica Simonis",
+    "album": "Give Me Everything",
+    "online": false,
+    "newAlbum": true,
+    "price": "$34.00",
+    "county": "Bedfordshire",
+    "rating": 5,
+    "tagswords": "dolores quibusdam non veritatis mollitia similique recusandae quae tempore voluptates vero saepe odit rerum amet animi eos quis quod debitis aliquam distinctio repudiandae ratione enim cumque corrupti consectetur adipisci quo quasi ullam rerum vel amet pariatur molestiae rerum iusto voluptatum"
+  },
+  {
+    "id": "dee45a87-1371-4da8-a4c7-75e965f720cd",
+    "productGenre": "Rap",
+    "artist": "Jeff Romaguera",
+    "album": "(Ghost) Riders in the Sky",
+    "online": false,
+    "newAlbum": false,
+    "price": "$19.00",
+    "county": "Buckinghamshire",
+    "rating": 4,
+    "tagswords": "facilis facilis eius illo commodi labore eaque excepturi totam itaque exercitationem voluptates pariatur magnam totam excepturi eaque magni exercitationem recusandae ex veniam libero ab natus culpa tenetur iusto maxime ab dolorum illo est architecto quos omnis animi accusantium libero temporibus"
+  },
+  {
+    "id": "53eb3b76-3796-4904-ad60-2a3fb8ff8d82",
+    "productGenre": "Electronic",
+    "artist": "Janice Kihn",
+    "album": "The Song From Moulin Rouge (Where Is Your Heart)",
+    "online": false,
+    "newAlbum": true,
+    "price": "$24.00",
+    "county": "Cambridgeshire",
+    "rating": 5,
+    "tagswords": "maiores ut possimus aliquam dicta molestias repellat ab occaecati dolorem repellendus iusto asperiores similique quae qui alias alias facilis quis blanditiis quisquam in molestias dolore ullam amet ab amet voluptas iusto nobis modi ipsam deleniti perferendis cumque deserunt magnam eaque"
+  },
+  {
+    "id": "d8e9e379-0cc3-465f-ac55-fc585f6d60af",
+    "productGenre": "Jazz",
+    "artist": "Melissa Mueller",
+    "album": "It's Too Late",
+    "online": false,
+    "newAlbum": false,
+    "price": "$17.00",
+    "county": "Avon",
+    "rating": 4,
+    "tagswords": "vero voluptates libero dolores ipsa tempora libero repellendus iste neque explicabo nihil ipsam maiores tenetur ipsam odio deleniti eum vitae iste quam labore est neque ex error possimus itaque officia doloremque modi repellendus distinctio distinctio possimus inventore eligendi minus blanditiis"
+  },
+  {
+    "id": "2ae13b96-ad3f-430c-9b3f-1efaa0f6efb1",
+    "productGenre": "Stage And Screen",
+    "artist": "Gloria Ankunding Jr.",
+    "album": "Incense & Peppermints",
+    "online": true,
+    "newAlbum": true,
+    "price": "$27.00",
+    "county": "Buckinghamshire",
+    "rating": 3,
+    "tagswords": "voluptates animi eveniet dolores odio quaerat cumque est voluptates in omnis adipisci repellat sapiente ipsum impedit natus eum tenetur odio sit ex amet cumque et facilis similique illum animi dicta deleniti aliquam molestias amet possimus ea commodi ab magni cupiditate"
+  },
+  {
+    "id": "e74ff576-b0dd-439a-bc54-835dbe2c7edb",
+    "productGenre": "Folk",
+    "artist": "Bertha Jacobson",
+    "album": "The Twist",
+    "online": true,
+    "newAlbum": false,
+    "price": "$37.00",
+    "county": "Berkshire",
+    "rating": 4,
+    "tagswords": "quae numquam tenetur enim tempore fuga animi alias praesentium earum facere accusamus nobis debitis facilis impedit sequi illum atque labore consequuntur illum reprehenderit eveniet alias vitae deleniti sint quas aliquam sapiente harum voluptatibus reiciendis dolorum enim deserunt minima blanditiis quaerat"
+  }
+]
