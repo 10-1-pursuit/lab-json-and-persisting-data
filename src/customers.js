@@ -7,9 +7,9 @@ function createRandomCustomer(){
         memberNumber: faker.phone.number(), 
         dateOfLastVisit: faker.date.past(3)
     };
+    console.log(`Welcome back, ${newCustomer.name}. Last visit on ${newCustomer.dateOfLastVisit}`)
     return newCustomer;
 }
-console.log(createRandomCustomer())
 
 module.exports = {
     createRandomCustomer
