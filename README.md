@@ -51,3 +51,9 @@ You could:
 You should not:
 
 - Write tests that are dependent on changing the data in the `data.json` file
+
+
+
+_________
+
+1. Look up how faker works to fix undefine

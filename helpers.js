@@ -29,7 +29,7 @@ function readJSONFile(path, fileName) {
 ///writeFileSync("path", data, {encoding: "utf-8" } )
 
 function writeJSONFile(path, fileName, data) {
-    data = JSON.toStringify(data)
+    data = JSON.stringify(data)
     fs.writeFileSync(`${path}/${fileName}`, data, { encoding: "utf-8" })
 }
 

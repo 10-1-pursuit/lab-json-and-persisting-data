@@ -5,12 +5,12 @@ function createRandomHacker() {
     const hacker = {
         _id: faker.datatype.uuid(),
         hackerName: `${faker.adjective} Boron Byson`,
-        messageTitle: `${hacker.adjective} ${hacker.abbreviation} on git.branch`,
+        messageTitle: `${faker.adjective} ${faker.abbreviation} on git.branch`,
 
-        messageContent: lorem.paragraph,
+        messageContent: "lorem.paragraph",
         isResolved: faker.datatype.boolean(),
-        messageResponse: hacker.phrase.date,
-        numberOfUpvotes: 800165,
+        messageResponse: faker.phrase,
+        numberOfUpvotes: null,
 
     }
     return hacker;
@@ -23,6 +23,10 @@ function randomHackerGenerator() {
     }
     return hackers;
 }
+
+
+
+
 
 module.exports = {
 

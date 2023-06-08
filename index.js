@@ -1,8 +1,10 @@
-const { createRandomHacker, randomFakeProduct } = require("./data/hackerBeware.json")
+const { createRandomHacker, randomHackerGenerator } = require("./Data/hacker.js")
 const { writeJSONFile, readJSONFile } = require("./helpers.js")
 
 //run: function to run our entire Command Line App
 function run() {
+    let writeToFile = false;
+    let filteredHacks = [];
 
     console.log("Welcome to our Product App!")
     let productsData = readJSONFile("./data", "hackerBeware.json")
@@ -16,7 +18,7 @@ function run() {
 
 run()
 
-let filteredHacks = [];
+
 function filterByResolved(hacker) {
     for (let key in hacker) {
         if (key.isResolved === true) {
