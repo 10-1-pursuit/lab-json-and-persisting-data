@@ -4,13 +4,13 @@ const { fs } = require('fs')
 function createRandomHacker() {
     const hacker = {
         _id: faker.datatype.uuid(),
-        hackerName: `${faker.adjective} Boron Byson`,
-        messageTitle: `${faker.adjective} ${faker.abbreviation} on git.branch`,
+        hackerName: faker.hacker.adjective(),
+        messageTitle: faker.hacker.adjective() + faker.hacker.abbreviation() + "on git.branch",
 
-        messageContent: "lorem.paragraph",
+        messageContent: faker.lorem.paragraph,
         isResolved: faker.datatype.boolean(),
         messageResponse: faker.phrase,
-        numberOfUpvotes: null,
+        numberOfUpvotes: faker.number,
 
     }
     return hacker;
