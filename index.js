@@ -6,13 +6,13 @@ function run() {
     let writeToFile = false;
     let filteredHacks = [];
 
-    console.log("Welcome to our Hackers App!")
-    let hacksData = readJSONFile("./data", "hackerBeware.json")
+    console.log("Welcome to our Product App!")
+    let productsData = readJSONFile("./data", "hackerBeware.json")
     //if file is empty -> Give us an empty Array
 
-    filteredHacks.push(createRandomHacker())
+    productsData.push(createRandomHacker())
 
-    writeJSONFile("./data", "hackerBeware.json", hacksData)
+    writeJSONFile("./data", "hackerBeware.json", productsData)
 
 }
 
@@ -28,7 +28,3 @@ function filterByResolved(hacker) {
     return filteredHacks;
 }
 
-module.exports = {
-
-
-}
