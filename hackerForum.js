@@ -13,7 +13,7 @@ const createHackerForum = () => {
     };
     return hackerForum;
   }
-  console.log(createHackerForum())
+  //console.log(createHackerForum())
   
   const randomCreateHackerForum = (number) => {
     const hackerForums = [];
@@ -22,7 +22,7 @@ const createHackerForum = () => {
     }
     return hackerForums;
   }
-  console.log(randomCreateHackerForum())
+  //console.log(randomCreateHackerForum())
   
   
   module.exports = { createHackerForum, randomCreateHackerForum };
