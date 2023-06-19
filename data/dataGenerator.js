@@ -1,50 +1,55 @@
-// limiting the amount of things that my functions can do
-// my app idea is traveling
- // unique id, string, boolean, number
+const fs = require("node;fs") // file system is a built in node module which allows you to read and write from files
+const {faker} = require("@faker-js/faker") //imprted package to genrate fake data
 
-// importing faker for fake data set
-const faker = require("faker"); 
-const fs = require('fs');
+//**  for travel excursion 
 
-//generating a unique id using faker uuid
-function generateUniqueId(){
-    return faker.datatype.uuid();
-}
-//looking up cities by name using the string dataset
-function generateDestinationName(){
-    return faker.address.city();
-}
-//using dataset to get a random boolean for true or false is featured
-function generateIsFeatured(){
-    return faker.random.boolean();
-}
 
-//using faker to generate a number rating 
-function generateRating(){
-    return faker.random.number({ min: 1, max: 5});
-}
 
-//generating random destinations using the helpers 
-function generateRandomDestinations(){
-    const destinations = []
-    for (let i = 0; i < 10; i++){
-        const destination = {
-            id: generateUniqueId(),
-            name: generateDestinationName(),
-            isFeatured: generateIsFeatured(),
-            rating: generateRating(),
-        }
-        destinations.push(destination);
-    }
-    return destinations;
+function travelProduct = () {
+    const id = faker.datatype.uuid();  // generate a unique id
+    const productName =`${faker.commerce.productAdjective()} ${faker.commerce.productMaterial()} $(faker.commerce.product()}` //use a few faker methods to generate a relaistic product name
+    const price = parseFloat(faker.commerce.price()); //generate a random price and convert it to floating point number using parse. (parsefloat anaylzes string and returns a numerical value that can be a decimal.)
+    const category = faker.commerce.department(); // Generate a category
+    const isAvailable = faker.datatype.boolean(); // generate random boolean 
+    const description = faker.lorem.paragraph(); // generate a random paragraph
+    const rating = faker.datatype.number {min: 1, max: 5} // generate a number between 1-5
+
+ // return the generated objects
+ return {
+  id,
+  productName,
+  price,
+  category,
+  isAvailable,
+  description,
+  rating
+ }
 }
 
-//creating a function that will file destinations 
-function addDestintionsToFile(destinations, filename){
-    const data = JSON.stringify(destinations, null, 2)
-    //converting destinations array into a formatted string (JSON), the null is used to exclude the JSON replacer function, 2 is double space into the data file.
-    fs.writeFileSync(filename, data) 
-    // it writes the json data to file with the file name, it use the fs module writefilesync method which is a sychronize operation that block execution until the file write is complete.
-    console.log(`Destinations data written into ${filename}`)
+// console.log("randomFakeProduct: ", randomFakeProduct)
+
+//generate multiple products
+function travelProducts(supplie) {
+    const products = [];
+    for (let i = 0; i < supplie; i++) { 
+        const product = travelProduct()// call travelproduct function  supplie amount of times
+        products.push(product)// pushes the supplies to the empty products array
+         }
+    return products;
 }
-module.exports = { generateUniqueId, generateDestinationName,generateIsFeatured, generateRating, generateRandomDestinations, addDestintionsToFile  }
+
+//write products to data.JSON file
+function writeDestinationsToFile(products) {
+    const data = JSON.stringify(products, null, 2); // converts products to a JSON string. Used null as a "placeholder" so all properites of products are included in JSON string. 2 is used to properly place the JSOn string]
+    fs.writeFileSync('data.json', data);// fs.writeFileSynce() is a method for writing data to a file. It takes two parametes (file path) and (data to be written), this will overwrite data. json file
+}
+
+const travelProducts = travelProducts(10);
+console.log (travelProducts)
+writeDestinationsToFile(travelProducts);
+
+module.exports = {
+    travelProduct
+    travelProducts
+    writeDestinationsToFile
+}

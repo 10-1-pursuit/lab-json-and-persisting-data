@@ -1,27 +1,29 @@
-const {generateRandomDestinations, writeDestinationsToFile} = require('../data/dataGenerator');
+const { createRandomHacker, randomHackerGenerator } = require("./Data/hacker.js")
+const { writeJSONFile, readJSONFile } = require("./helpers.js")
 
-function bookTrip(){
-    //load the destination from the file
-    const destinations = require('../data/destinations.json'); 
-    
+//run: function to run our entire Command Line App
+function run() {
+    let writeToFile = false;
+    let productsData = [];
 
-    //random selecting a destination
-    const randomIndex = Math.floor(Math.random() * destinations.length);
-    const destination = destinations[randomIndex];
+    console.log("Welcome to our Product App!")
+    let productsData = readJSONFile("./data", "hackerBeware.json")
+    //if file is empty -> Give us an empty Array
 
-    if (destination) {
-        console.log(`Booking a trip to ${destination.name}`)
-    } else {
-        console.log(`No trips are available at this moment`)
-    }   
+    productsData.push(createRandomHacker())
+
+    writeJSONFile("./data", "hackerBeware.json", productsData)
+
 }
 
-// to generate random destination
-//const tripRandom = generateRandomDestinations();
-    
-// to file the destination
-//writeDestinationsToFile(tripRandom,'../data/destinations.json');
+run()
 
-bookTrip()
 
-module.exports = {bookTrip}
+function filterByResolved(hacker) {
+    for (let key in hacker) {
+        if (key.isResolved === true) {
+            filteredHacks.push(hacker)
+        }
+    }
+    return filteredHacks;
+}
